@@ -28,7 +28,7 @@ connectButton.addEventListener("click", () => {
     const destinationToCall = { communicationUserId: destinationUserElement.value};
 	call = callAgent.startCall([destinationToCall]);
     
-    call.on('callStateChanged', () => {
+    call.on('stateChanged', () => {
         callStateElement.innerText = call.state;
     })
 	
