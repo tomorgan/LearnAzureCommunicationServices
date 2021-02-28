@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn ASC Day 7 - Joining a Group Call</title>
+</head>
+<body>
+    <h2>Learn ASC Day 5 - Joining a Group Call</h2>
+     
+    <p>Call state <span style="font-weight: bold" id="call-state">-</span></p>
+	<input id="destination-group-input" type="text" placeholder="Group to Join (must be a GUID)"
+        style="margin-bottom:1em; width: 300px;" />
+
+    <div>
+        <button id="connect-button" type="button" disabled="false">
+            Connect
+        </button>
+        <button id="disconnect-button" type="button" disabled="true">
+            Disconnect
+        </button>		
+    </div>
+	
+	
+	
+	<hr/>
+	<p style="font-family: sans-serif">Hi, I'm Tom! I hope you found this code sample useful. This sample code comes from a series of blog posts about Azure Communication Services. Links for all blog posts can be found at <a href="https://learnacs.dev" target="_blank" rel="noopener">learnACS.dev</a>. I blog at <a href="https://blog.thoughtstuff.co.uk">thoughtstuff.co.uk</a>. You can also <a href="https://www.youtube.com/c/TomMorganTS?sub_confirmation=1" target="_blank" rel="noopener">subscribe to my YouTube channel</a> for videos about ACS (and much more!). </p>
+	
+	<h4>Disclaimer: This is a sample. It’s not meant for you to take and use without fully understanding what it’s doing. It’s definitely not meant for production use. You should understand the risks of hosting your own ACS instance and associated web-based entry point on the public internet before proceeding. If you end up sharing your access tokens, or there’s a bug in the code and you end up with a huge hosting bill, or find yourself unwittingly hosting other people’s rooms, you’re on your own. This sample code is provided under the <a href="https://opensource.org/licenses/MIT">MIT license</a>, which you should read in full (it’s 21 LOC).</h4>
+	
+    <script src="./bundle.js"></script>
+</body>
+
+</html>
