@@ -20,7 +20,7 @@ async function init() {
   callClient = new CallClient();
 	
   //get an access token to use
-  const response = await fetch('https://acspocapi.azurewebsites.net/api/IssueToken?code=KbIzHm8WFsoiWhUEjJwppFaRjg4D3LY7B242tDBKVoz/7ibybc2TbQ==');
+  const response = await fetch('YOUR ACS TOKEN ISSUING WEB FUNCTION URL HERE (WITH THE CODE). SEE DAY 3');
   const responseJson = await response.json(); 
   const token = responseJson.item2.token;
   const tokenCredential = new AzureCommunicationTokenCredential(token);
