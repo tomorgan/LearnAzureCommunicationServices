@@ -17,7 +17,7 @@ async function init() {
   //get an access token to use
   const response = await fetch('YOUR ACS TOKEN ISSUING WEB FUNCTION URL HERE (WITH THE CODE). SEE DAY 3');
   const responseJson = await response.json(); 
-  const token = responseJson.token;
+  const token = responseJson.item2.token;
   const tokenCredential = new AzureCommunicationTokenCredential(token);
   callAgent = await callClient.createCallAgent(tokenCredential);
   connectButton.disabled = false;
