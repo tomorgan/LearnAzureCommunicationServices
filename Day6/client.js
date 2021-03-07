@@ -22,10 +22,10 @@ async function init() {
   //get an access token to use
   const response = await fetch('YOUR ACS TOKEN ISSUING WEB FUNCTION URL HERE (WITH THE CODE). SEE DAY 3');
   const responseJson = await response.json(); 
-  const token = responseJson.item2.token;
+  const token = responseJson.value.item2.token;
   const tokenCredential = new AzureCommunicationTokenCredential(token);
   callAgent = await callClient.createCallAgent(tokenCredential);
-  identityElement.innerText = responseJson.item1.id;
+  identityElement.innerText = responseJson.value.item1.id;
   connectButton.disabled = false;
   
   callAgent.on('incomingCall', (call) => {
